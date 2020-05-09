@@ -1,20 +1,19 @@
 function diamond(size) {
-  let res = null
-  let resInvert = ''
-  let cRes = ''
+  let result = null
+  let resultInvert = ''
+  let backupResult = ''
   if((size%2) > 0 && size > 0) {
     let interaction = (size - 1) / 2
-    res = ''
     while(interaction >= 0) {
-      resInvert = cRes + resInvert
-      cRes = ' '.repeat(interaction) + '*'.repeat((size - (interaction * 2))) + '\n'
-      res += cRes
+      resultInvert = backupResult + resultInvert
+      backupResult = `${' '.repeat(interaction)} ${'*'.repeat((size - (interaction * 2)))} \n`
+      result += backupResult
       interaction--
     }
 
-    res = res + resInvert
+    result = result + resultInvert
   }
-  return res
+  return result
 }
 
 module.exports = { diamond };
