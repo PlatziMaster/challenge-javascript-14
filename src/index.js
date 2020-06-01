@@ -40,5 +40,4 @@ function diamond(size) {
   diamond += nxtLine
   return diamond;
 }
-diamond(9)
 module.exports = { diamond };
