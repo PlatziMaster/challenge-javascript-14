@@ -17,5 +17,8 @@ describe('diamond', () => {
   it('should a diamond with size 5', () => {
     expect(diamond(5)).toBe('  *\n ***\n*****\n ***\n  *\n');
   });
+  it('should a diamond with size 7', () => {
+    expect(diamond(7)).toBe('   *\n  ***\n *****\n*******\n *****\n  ***\n   *\n');
+  });
 
 });
