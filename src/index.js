@@ -1,4 +1,4 @@
-function diamond(size) {
+const diamond = (size) => {
   let diamond = '';
   const space = ' ';
   const asterisk = '*';
@@ -11,6 +11,6 @@ function diamond(size) {
     }
     return diamond;
   }
-}
+};
 
 module.exports = { diamond };
