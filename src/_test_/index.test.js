@@ -1,4 +1,4 @@
-const { diamond } = require ('../index');
+const { diamond } = require('../index').default;
 
 describe('diamond', () => {
 
