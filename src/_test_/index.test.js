@@ -18,4 +18,15 @@ describe('diamond', () => {
     expect(diamond(5)).toBe('  *\n ***\n*****\n ***\n  *\n');
   });
 
+  it('should a diamond with size 7', () => {
+    expect(diamond(7)).toBe('   *\n  ***\n *****\n*******\n *****\n  ***\n   *\n');
+  });
+
+  it('should a diamond with size 9', () => {
+    expect(diamond(9)).toBe('    *\n   ***\n  *****\n *******\n*********\n *******\n  *****\n   ***\n    *\n');
+  });
+
+  it('should a diamond with size 15', () => {
+    expect(diamond(15)).toBe('       *\n      ***\n     *****\n    *******\n   *********\n  ***********\n *************\n***************\n *************\n  ***********\n   *********\n    *******\n     *****\n      ***\n       *\n');
+  });
 });
